@@ -1,0 +1,567 @@
+/**********************************************************************
+*************CSS criado por FELIPE CHA CHA 01-18***********************
+***********************************************************************
+CONTATO: felipeimenda04@gmail.com /contato@codemakerweb.com.br
+***********************************************************************/
+
+/************REGRAS GERAIS*******************
+*********************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Kavoon'); */
+/* @import url('https://fonts.googleapis.com/css?family=Bangers'); */
+
+html, body{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .200em;
+    overflow-y: visible;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand{
+    font-family: 'Bangers', arial;
+    letter-spacing: .2em;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+
+
+.centralize, #home{
+    
+    /*alinhar conteudo com display flex*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+     
+}
+
+#home, #sobre, #skills, #linguagens, #contato, #portfolio{
+    padding: 50px 20px;
+    height: 100%;
+}
+
+#home{
+    padding-top: 90px;
+   
+}
+
+.conteudo-texto{
+    padding:20px 20px;
+    margin-top:3    0px;
+}
+
+.conteudo-texto h1{
+   margin-bottom: 50px;
+}
+
+.pagina-1, .pagina-2, .pagina-3, .pagina-4, .pagina-5, .pagina-6{
+    width: 100%; 
+}
+
+/******************efeito de inclinação da DIV**********************
+*******************************************************************/
+
+.skew-right{
+    transform: skewY(2deg);
+    border-top: 1px solid rgba(0,0,0, .1);
+    border-width:medium;
+}
+
+.no-skew-right{
+     transform: skewY(-2deg); 
+     
+}
+
+.skew-left{
+    transform: skewY(-2deg);
+    border-top: 1px solid rgba(0,0,0, .5);
+    border-width:medium;
+    border-bottom: 1px solid #000;
+    border-width:medium;
+    
+    
+}
+
+.no-skew-left{
+    transform: skewY(2deg);   
+}
+/******************FIM EFEITO DE INCLINAÇÂO DIV**********************
+*******************************************************************/
+
+
+/**********************NAVEGAÇÂO*****************
+************************************************/
+nav{
+    background: #FF0055;
+    opacity: 1;
+    transition: all .5s linear;
+    z-index: 999;
+    text-align: center;
+    font-family: 'Bangers', arial;
+    font-size: 2em;
+}
+
+nav:hover{ 
+    opacity: 1;
+}
+
+.nav-link{
+    transition: all .3s;
+    
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.5);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    animation-name: rubberBand;
+    animation-iteration-count: 1;
+    animation-duration: 1.5s;
+    color: #fff;
+}
+
+
+button.navbar-toggler{
+    opacity: 1;
+    transition: all .3s linear;
+     
+}
+
+.navbar-toggler:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.navbar-toggler:before nav{
+    background: #FF0055; 
+}
+
+.navbar-brand{
+    transition: all .5s;
+}
+.navbar-brand:hover{
+    transform: scale(1.2);
+    
+
+}
+/********************** fim NAVEGAÇÂO*****************
+************************************************/
+
+
+/**************pagina inicial************************/
+#home{
+    
+}
+.pagina-1{
+    background:  #FFF;
+    background-size: cover;
+}
+
+.face-header{
+    background: url(http://www.williamsburgtamworth.com.au/img/spinner/hendrix.png) center no-repeat;
+    background-size: contain;
+}
+
+.apresentacao h1{
+    text-transform: uppercase;
+    font-size: 3.2em;
+    color: #000;
+    font-weight: 400;
+    
+}
+
+.uppercase-red{
+    text-transform:uppercase;
+    color: #FF0055;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+/* social icons */
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+    padding: 0;
+    margin-top: 30px;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoWhatsApp:hover {
+	background-color:#34af23;
+}
+.social-network a.icoGithub:hover {
+	background-color:#BD3518;
+}
+
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+ .social-network a.icoFacebook:hover i, .social-network a.icoWhatsApp:hover i,
+.social-network a.icoGithub:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #000;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.social-network a {
+ background-color:none;   
+}
+
+/*****************DESCRIÇÂO**************************/
+#sobre{
+    background: linear-gradient(180deg, rgba(255,255,255, .5), rgba(255,255,255, 1), rgba(255,255,255, .8)), url("../img/quadrinhos-background.jpg") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+     
+}
+
+/*****************habilidades**************************/
+#skills{
+    background: #F3f3f3;
+}
+
+#skills p{
+    padding-top: 20px;
+}
+
+/****************PORTFOLIO***************************/
+
+#portfolio{
+    margin-top: -25px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background:#FFF;
+    background-size:cover;
+}
+
+.pagina-3{
+    
+    
+}
+
+.owl-theme .owl-dots{
+    margin-top: 20px;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    background: #d6d6d6;
+}
+
+.owl-theme .owl-dots .owl-dot span:hover{
+    background: #FF0055;
+}
+
+.owl-nav{
+    display: none;
+}
+
+.description{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background:  rgba(0,0,0, .5);
+    min-height: 100px;
+    opacity: 0;
+    transition: all .5s linear;
+    
+}
+
+.description h6{
+    padding: 10px 0px 0px 20px;
+    margin-bottom: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.description p{
+    padding: 5px 0px 5px 0px;
+    margin-bottom: 0;
+    color: #c0c0c0;
+    text-align: center;
+}
+
+.description a i{
+    color: #FFF;
+    transition: all .2s linear; 
+    padding-bottom: 5px;  
+}
+
+.description a i:hover{
+    color: #c0c0c0;
+}
+
+
+.slick-item{
+    width: 100%;
+    overflow: hidden;
+    background: #c0c0c0;
+    border-radius: 0px;
+   
+}
+.slick-item img{
+    transition: all .3s linear;
+    
+    
+}
+
+.slick-item:hover img{
+   transform: scale(1.1);
+   opacity: .8;
+   
+}
+
+.slick-item:hover .description{
+    opacity:1;
+ }
+
+/******************CONTATO*************************/
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+#contato{
+    border-top: 1px solid #000;
+    background:#f3f3f3;
+    /* animation:move-twink-back 200s linear infinite; */
+
+   
+}
+.stars {
+    background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    z-index:0;
+  }
+
+  .twinkling{
+    background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+    z-index:2;
+    animation:move-twink-back 200s linear infinite;
+  }
+
+.star-geek{
+     background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+     animation:move-twink-back 200s linear infinite; 
+     z-index:3;
+   
+}
+
+.formulario-contato{
+    margin: 50px auto;
+}
+
+
+.content-4{
+
+}
+
+/*************FOOTER***************/
+
+footer{
+    padding: 40px 10px;
+    z-index: 999;
+    background: linear-gradient(rgba(0,0,0, .9), rgba(0,0,0, .9), rgba(0,0,0, .9)), url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/white-and-gray-burst-vector-background-cartoon-comic-background-with-space-for-your-logo-or-title-nice-sunburst-vintage-style-retro-pattern-circuses-background-seamless-loop-motion-background-stripes-rotating_hagdhcr3_thumbnail-full01.png") center no-repeat;
+}
+
+.copy{
+    color: #c0c0c0;
+    opacity: .3;
+}
+
+.social-media-footer{
+    margin-bottom: 10px;
+}
+/******************MEDIA QUERIES******************************/
+
+/***************SMARTPTHONE (XS)******************************/
+
+@media screen and (max-width:767px){
+
+nav{
+    background: #FF0055;
+}
+
+#sobre p {
+    text-align: left;
+    font-size: .900em;
+}
+
+p{
+    font-size: .900em; 
+}
+    .content-1{
+        background: linear-gradient(180deg, rgba(255,255,255, .3), rgba(0,0,0, .5), rgba(0,0,0, 0)), url("../img/nuvens-background.jpg") center no-repeat;
+        background-size: cover;
+    }
+    
+    .content-description{
+        display: none;
+    }
+
+    .apresentacao{
+        padding-top: 40px;
+    }
+
+    .apresentacao h1{
+       
+        padding-top: 80px;
+        font-size: 1.5em;
+        text-align: center;
+        color: #000;
+        padding: 0px 10px;
+    }
+
+     #pp-nav{ 
+        margin-right: -10px;
+    } 
+
+    .uppercase-red{
+        font-size: .780em;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .social-network ul{
+       
+    }
+
+    .invisible-xs{
+        display: none;
+    }
+
+    #home, #sobre, #portfolio, #contato{
+        min-height:100vh;
+       
+    }
+
+    h1{
+        
+    }
+
+    nav{
+       
+    }
+
+    .social-media-footer i{
+        color:#c0c0c0;
+    }
+
+    .description{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:  rgba(0,0,0, .5);
+        min-height: 100px;
+        opacity: 0;
+        transition: all .5s linear;
+        
+    }
+
+    .description h6{
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        margin-bottom: 0;
+        color: #FFF;
+        text-align: center;
+        font-size: 1em;
+    }
+    
+    .description p{
+        padding: 5px 0px 5px 0px;
+        margin-bottom: 0;
+        color: #c0c0c0;
+        text-align: center;
+        font-size: .700em;
+        font-weight: 400;
+        
+    }
+    
+    .description a i{
+        color: #FFF;
+        transition: all .2s linear;    
+    }
+    
+    .description a i:hover{
+        color: #c0c0c0;
+    }
+    
+    
+    .slick-item{
+        width: 100%;
+        overflow: hidden;
+        background: #c0c0c0;
+        border-radius: 0px;
+       
+    }
+
+
+}
+
+
